@@ -7,5 +7,5 @@ RUN pip --no-cache-dir install $TF_URL
 VOLUME /notebooks
 WORKDIR /notebooks
 
-EXPOSE 22 8888
+EXPOSE 8888
 CMD ["/home/run.sh"]
