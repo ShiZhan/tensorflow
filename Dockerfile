@@ -8,4 +8,4 @@ VOLUME /notebooks
 WORKDIR /notebooks
 
 EXPOSE 8888
-CMD ["/home/run.sh"]
+CMD ["/bin/sh", "-c", "/usr/local/bin/jupyter-notebook --no-browser --ip=0.0.0.0 --notebook-dir=/notebooks"]
